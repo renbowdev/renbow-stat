@@ -1,7 +1,7 @@
 ﻿const { Client, MessageEmbed, Collection } = require('discord.js');
 const client = global.client = new Client({fetchAllMembers: true});
 const mongoose = require('mongoose');
-mongoose.connect('mongodb+srv://rainbow:0331mek0331A@cluster0.lfbzb.mongodb.net/statbot?retryWrites=true&w=majority', {useNewUrlParser: true, useUnifiedTopology: true});
+mongoose.connect('', {useNewUrlParser: true, useUnifiedTopology: true});
 mongoose.connection.on("open", async () => {
 console.log("database bağlandı")
 })
